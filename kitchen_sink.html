@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 4 Kitchen Sink</title>
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header style="position: sticky; top: 0; z-index: 100;">
+    <div  style="background-color: #343a40;">
+      <div class="header">
+        <div style="padding-left: 16px;">
+          <label class="cursor" for="toggle" style="color: white; display: inline-block; border: 1px solid white; padding: 10px; opacity: 40%; border-radius: 5px;">
+            <i class="fas fa-bars" style="font-size: 25px; margin-left: 10px; margin-right: 10px;"></i>
+          </label>
+          <input class="none" id="toggle" type="checkbox"/>       
+            <div class="none menubars" style="color: white;opacity: 70%;">
+              <p>Layout</p>
+              <p>Components</p>
+              <p>Utilities</p>
+            </div>
+        </div>
+        <div style="padding-right: 16px; ">
+          <p style="color: white; font-size: 1.3rem; margin: 0; margin-top: 10px; "><span>Bootstrap 4 Kitchen Sink</span></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section style="padding: 32px; padding-bottom: 0;">
+    <div>
+      <div class="Layout">
+        <div class="mar-bot-50">
+          <h3 style="background-color: #e2e2e2; font-size: 2rem; padding: 10px;">Layout</h3>
+        </div>
+        <div class="container">
+          <div id="left" style="width:50%;">
+            <div class="title">
+              <h3>Media Object</h3>
+            </div>
+            <div>
+              <div class="media-object" style="margin-bottom: 10px;">
+                <div>
+                  <p >60x60</p>
+                </div>
+                <div>
+                  <h4 style="margin:0px; margin-bottom: 10px;">Media heading</h4>
+                  <p style="margin:0px">Media object description text</p>
+                </div>
+              </div>
+              <div class="media-object">
+                <div style="margin-left: 75px;">
+                  <p >60x60</p>
+                </div>
+                <div>
+                  <h4 style="margin:0px; margin-bottom: 10px;">Media heading</h4>
+                  <p style="margin:0px">Media object description text</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="right" style="width: 50%;">
+            <div class="title">
+              <h3>Grid System</h3>
+            </div>
+            <div>
+              <div style="border: 1px solid black">
+                <div class="grid-container">
+                  <div style="grid-column: 1 / 4; line-height: 80px; border-top: none;">.col</div>
+                  <div style="grid-column: 4 / 7; line-height: 80px; border-right: none; border-top: none;">.col</div>
+                  <div style="grid-column: 1 / 3; line-height: 40px; font-size: 1.5rem;">.col</div>
+                  <div style="grid-column: 3 / 5; line-height: 40px; font-size: 1.5rem;">.col</div>
+                  <div style="grid-column: 5 / 7; line-height: 40px; font-size: 1.5rem; border-right: none">.col</div>
+                </div>
+              </div>
+              <div class="text " style="margin-top:15px; margin-bottom: 15px;">
+                <p>&ltdiv class="container"&gt</p>
+                <p style="text-indent: 0.7cm;">&ltdiv class="row"&gt</p>
+                <p style="text-indent: 1.4cm;">&ltdiv class="col"&gt.col&lt/div&gt</p>
+                <p style="text-indent: 1.4cm;">&ltdiv class="col"&gt.col&lt/div&gt</p>
+                <p style="text-indent: 0.7cm;">&lt/div&gt</p>
+                <p style="text-indent: 0.7cm;">&ltdiv class="row"&gt</p>
+                <p style="text-indent: 1.4cm;">&ltdiv class="col"&gt.col&lt/div&gt</p>
+                <p style="text-indent: 1.4cm;">&ltdiv class="col"&gt.col&lt/div&gt</p>
+                <p style="text-indent: 1.4cm;">&ltdiv class="col"&gt.col&lt/div&gt</p>
+                <p style="text-indent: 0.7cm;">&lt/div&gt</p>
+                <p>&lt/div&gt</p>
+              </div>
+              <div style="background-color: #e2e2e2;">
+                <div style="padding: 5px; padding-left: 15px; margin-bottom: 20px;">
+                  <h3 style="display: inline-block;">Tip!</h3>
+                  <p style="display: inline-block;">CRC = .container > .row > .col</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="mar-bot-50">
+          <h3 style="background-color: #e2e2e2; font-size: 2rem; padding: 10px;">Content</h3>
+        </div>
+        <div class="container">
+          <div id="left" style="width: 50%;">
+            <div style="margin-right: 10px;">
+              <div>
+                <div class="title">
+                  <h3>Display Headings</h3>
+                </div>
+                <div class="mar-bot-50">
+                  <h1 style="font-weight: 100; font-size: 5.6rem; margin-top: 0px; margin-bottom: 10px;">Display 1</h1>
+                  <h1 style="font-weight: 100; font-size: 4.8rem; margin-top: 0px; margin-bottom: 8px;">Display 2</h1>
+                  <h1 style="font-weight: 100; font-size: 4.0rem; margin-top: 0px; margin-bottom: 6px;">Display 3</h1>
+                  <h1 style="font-weight: 100; font-size: 3.2rem; margin-top: 0px; margin-bottom: 4px;">Display 4</h1>
+                </div>
+              </div>
+
+              <div class="title">
+                <h3>Muted Text Class</h3>
+              </div>
+
+              <div class="title">
+                <h3 style="display: inline-block;">Heading Text</h3>
+                <p style="color: white; display: inline-block; font-size: 1rem;">With muted secondary text</p>
+              </div>
+
+              <div class="title">
+                <h3>Blockquote</h3>
+                <div>
+                  <p style="font-size: 1.2rem; margin-bottom: 0px;">Typography is to literature as musical performance is to composition: an essential act of interpretation, full of endless opportunities for insight or obtuseness.</p>
+                  <p class="Blockquote"style="opacity: 70%; font-size: 0.9rem; margin-top: 0px;">Robert Bringhurst in <i>The Elements of Typographic Style</i></p>
+                </div>
+              </div>
+              <div class="title">
+                <h3>Table</h3>
+                <table style="margin-bottom: 20px;">
+                  <tr style="background-color: #212529; color: white;">
+                    <th>#</th>
+                    <th>thead-dark</th>
+                  </tr>
+                  <tr>
+                    <td class="bold">1</td>
+                    <td>Nina</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">2</td>
+                    <td>Penta</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">3</td>
+                    <td>Santa Maria</td>
+                  </tr>
+                </table>
+                <table>
+                  <tr style="background-color: #e9ecef; color: #495057;">
+                    <th>#</th>
+                    <th>thead-light</th>
+                  </tr>
+                  <tr>
+                    <td class="bold">1</td>
+                    <td>Nina</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">2</td>
+                    <td>Penta</td>
+                  </tr>
+                  <tr>
+                    <td class="bold">3</td>
+                    <td>Santa Maria</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div id="right" style="width: 50%;">
+            <div style="margin-left: 10px;">
+              <div>
+                <div class="title">
+                  <h3>Lead</h3>
+                </div>
+                <div class="mar-bot-50">
+                  <p style="font-weight: 100; font-size: 1.2rem; opacity: 70%;">A lead paragraph is used to draw a reader into the body copy. In a badly designed book, the letters mill and stand like starving horses in a field. In a book designed by rote, they sit like stale bread and mutton on the page.</p>
+                  <p>In a well-made book, where designer, compositor and printer have all done their jobs, no matter how many thousands of lines and pages, the letters are alive. They dance in their seats. Sometimes they rise and dance in the margins and aisles.</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Unstyled List</h3>
+                </div>
+                <div class="mar-bot-50">
+                  <p class="unstyled-list-mar">Unstyled list item text</p>
+                  <p class="unstyled-list-mar">Unstyled list item text</p>
+                  <ul class="unstyled-list-mar">
+                    <li style="list-style-type: circle;">Nested list items need the .list-unstyled class as well or they will have bullets</li>
+                  </ul>
+                  <p class="unstyled-list-mar">Unstyled list item text</p>
+                  <p class="unstyled-list-mar">Unstyled list item text</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Inline List</h3>
+                </div>
+                <div class="mar-bot-50">
+                  <ul style="padding-left: 0px;">
+                    <li style="display: inline;">List item one</li>
+                    <li style="display: inline;">List item two</li>
+                    <li style="display: inline;">List item three</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Description List</h3>
+                </div>
+                <div>
+                  <dl class="description">
+                    <dt>Long title that is not truncated or shortened</dt>
+                    <dd>Definition list description etiam porta sem malesuada magna mollis euismod.</dd>
+                    <dt style="height: 40px; overflow: hidden;">Long title that is not truncated or shortened</dt>
+                    <dd>Definition list description etiam porta sem malesuada magna mollis euismod.</dd>
+                    <dt>Nesting</dt>
+                    <div style="flex: 0 0 75%; max-width: 75%; margin: 0;">
+                      <dl class="description-mini" style="margin: 0;">
+                        <dt style="width: 30%; font-weight: bold; ">Nested definition list</dt>
+                        <dd style="width: 70%;">Definition list description etiam porta sem malesuada magna mollis euismod.</dd>
+                      </dl>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Image Thumbnails</h3>
+                </div>
+                <div class="mar-bot-50" style="display: flex;">
+                  <div class="image-thumbnails">
+                    <div>
+                      <p style=>80x80</p>
+                    </div>
+                  </div>
+                  <div class="image-thumbnails">
+                    <div>
+                      <p>80x80</p>
+                    </div>
+                  </div>
+                  <div class="image-thumbnails">
+                    <div>
+                      <p>80x80</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Figure</h3>
+                </div>
+                <div style="background-color: #563d7c; width: 65%; height: 200px; justify-content: center; align-items: center; display: flex; margin: 5px;">
+                  <p style="color: white; text-align: center; font-size: 3rem; font-weight: 100;">400x200</p>
+                </div>
+                <p class="mar-bot-50" style="opacity: 70%;">Figure caption description text</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="mar-bot-50">
+          <h3 style="background-color: #e2e2e2; font-size: 2rem; padding: 10px;">Components</h3>
+        </div>
+        <div class="container">
+          <div id="left" style="width:50%;">
+            <div style="margin-right: 10px;">
+              <div>
+                <div class="title">
+                  <h3>Alert</h3>
+                </div>
+                <div class="alert">
+                  <p style="background-color: #cce5ff; color: #004085;">This is a primary alert</p>
+                  <p style="background-color: #e2e3e5; color: #383d41;">This is a secondary alert</p>
+                  <p style="background-color: #d4edda; color: #155724;">This is a success alert</p>
+                  <p style="background-color: #f8d7da; color: #721c24;">This is a danger alert</p>
+                  <p style="background-color: #fff3cd; color: #856404;">This is a warning alert</p>
+                  <p style="background-color: #d1ecf1; color: #0c5460;">This is a info alert</p>
+                  <p style="background-color: #fefefe; color: #818182;">This is a light alert</p>
+                  <p style="background-color: #d6d8d9; color: #1b1e21;">This is a dark alert</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Badge</h3>
+                </div>
+                <div class="mar-bot-50 badge" >
+                  <p>Example heading <span style="background-color: #007bff;">.badge-primary</span></p>
+                  <p>Example heading <span style="background-color: #6c757d;">.badge-secondary</span></p>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Popover</h3>
+                </div>
+
+                <div style="margin-bottom: 25px; display: flex; justify-content: flex-start; height: 120px;">
+                  <label class="cursor" for="popover-toggle">
+                    <p style="display: inline-block; margin-right: 10px;">
+                      <span class="button" style="font-size: 1.3rem;">Popover on click</span>
+                    </p>
+                  </label>
+                  <input class="none" id="popover-toggle" type="checkbox"/>   
+                  <div class="popover none"  style="border: 1px solid #f1f1f1; flex: 1 1 30%;">
+                    <div style="background-color: #f1f1f1; height: 30px;">
+                      <span style="display: block; font-weight: bold; margin: 5px 0 0 5px;">Dismissble popover</span>
+                    </div>
+                    <p>And here's some amazing content. It's very engaging, Right?</p>
+                  </div>
+                </div>  
+              
+                <div style="margin-bottom: 25px; display: flex; justify-content: flex-start; height: 120px;">
+                  <label class="cursor" for="popover-hover">
+                    <p style="display: inline-block; margin-right: 10px;">
+                      <span class="button" style="font-size: 1.3rem;">Popover on hover</span>
+                    </p>
+                  </label>
+                  <input class="none" id="popover-hover" type="checkbox"/>   
+                  <div class="none hover" style="border: 1px solid #f1f1f1; flex: 1 1 30%;">
+                    <div style="background-color: #f1f1f1; height: 30px;">
+                      <span style="display: block; font-weight: bold; margin: 5px 0 0 5px;">Popover title</span>
+                    </div>
+                    <p>popover description content</p>
+                  </div>
+                </div>  
+              
+              </div>
+
+
+              <div>
+                <div class="title">
+                  <h3>Card</h3>
+                </div>
+                <div style="width: 325px; height: 440px;">
+                  <div class="card">
+                    <p>600x400</p>
+                  </div>
+                  <div style="border: 1px solid #e9ecef; padding: 20px; padding-top: 0;">
+                    <h3 style="font-size: 1.6rem;">Card title</h3>
+                    <p style="margin-bottom: 25px;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="">
+                      <span class="button">Go somewhere</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Collapse - Accordian</h3>
+                </div>
+                <div>
+                  <div style=" background-color: #f1f1f1">
+                    <label class="cursor" for="accordian-nav-1" style=" padding: 5px; border-radius: 5px;">
+                      <h3 style="padding-left: 30px; margin: 0"><a class="accordian-text"style="color: #007bff;">Accordian Group Item #1</a></h3>
+                    </label>
+                    <input class="none" id="accordian-nav-1" type="checkbox"/>       
+                    <div class="none accordian-block-1" style="background-color: white; border: 1px solid #e2e2e2;">
+                      <div style="display: flex;">
+                        <div style="border: 1px solid #dee2e6; margin: 20px; margin-right: 30px;">
+
+                          <div class="card"style="width: 200px; margin: 5px;">
+                            <p>200 x 200</p>
+                          </div>
+                        </div>
+                        <div style="margin-right: 30px; ">
+                          <h3 style="font-size: 2rem;">Accordian Group Heading</h3>
+                          <p>Accordian content description text.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style=" background-color: #f1f1f1">
+                    <label class="cursor" for="accordian-nav-2" style=" padding: 5px; border-radius: 5px;">
+                      <h3 style="padding-left: 30px; margin: 0"><a class="accordian-text" style="color: #007bff;">Accordian Group Item #2</a></h3>
+                    </label>
+                    <input class="none" id="accordian-nav-2" type="checkbox"/>       
+                    <div class="none accordian-block-2" style="background-color: white; border: 1px solid #e2e2e2;">
+                      <div style="display: flex;">
+                        <div style="border: 1px solid #dee2e6; margin: 20px; margin-right: 30px;">
+                          <div class="card" style="width: 200px; margin: 5px;">
+                            <p>200 x 200</p>
+                          </div>
+                        </div>
+                        <div style="margin-right: 30px; ">
+                          <h3 style="font-size: 2rem;">Accordian Group Heading</h3>
+                          <p>Accordian content description text.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style=" background-color: #f1f1f1">
+                    <label class="cursor" for="accordian-nav-3" style=" padding: 5px; border-radius: 5px;">
+                      <h3 style="padding-left: 30px; margin: 0"><a class="accordian-text" style="color: #007bff;">Accordian Group Item #3</a></h3>
+                    </label>
+                    <input class="none" id="accordian-nav-3" type="checkbox"/>       
+                    <div class="none accordian-block-3" style="background-color: white; border: 1px solid #e2e2e2;">
+                      <div style="display: flex;">
+                        <div style="border: 1px solid #dee2e6; margin: 20px; margin-right: 30px;">
+                          <div class="card" style="width: 200px; margin: 5px;">
+                            <p>200 x 200</p>
+                          </div>
+                        </div>
+                        <div style="margin-right: 30px; ">
+                          <h3 style="font-size: 2rem;">Accordian Group Heading</h3>
+                          <p>Accordian content description text.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Input group</h3>
+                </div>
+                <form action="" >
+                  <div class="input-group">
+                    <input type="text" id="search" name="search" placeholder="Search Products">
+                    <span class="button">Search</span>
+                  </div>
+                  <div class="input-group">
+                    <input type="text" id="email" name="email" placeholder="Email Address">
+                    <span class="button">Subscribe</span>
+                  </div>
+                </form>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>List group with Custom Content</h3>
+                </div>
+
+                <div>
+                  <div class="custom-content" style="border: none; background-color: #007bff; ">
+                    <a href="" style="color: white;">
+                      <div>
+                        <h4>Don't Make Me Think</h4>
+                        <p>20 Comments</p>
+                      </div>
+                      <div>
+                        <p>Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit</p>
+                        <p>Category: Design</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="custom-content">
+                    <a href="" style="color: #495057;">
+                      <div>
+                        <h4>Thinking with Type</h4>
+                        <p>3 Comments</p>
+                      </div>
+                      <div>
+                        <p>Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit</p>
+                        <p>Category: Design</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="custom-content">
+                    <a href="" style="color: #495057;">
+                      <div>
+                        <h4>Design of Everyday Things</h4>
+                        <p>3 Comments</p>
+                      </div>
+                      <div>
+                        <p>Description text gravida at eget metus. Maecenas sed diam eget risus varius blandit</p>
+                        <p>Category: Design</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Pills Nav</h3>
+                </div>
+                <ul class="nav">
+                  <li style="padding: 10px; background-color: #007bff; border-radius: 5px;"><a href="" style="color: white;">Active</a></li>
+                  <li><a href="" style="color: #007bff">Dropdown <i class="fas fa-arrow-down"></i></a></li>
+                  <li><a href="">Link</a></li>
+                  <li><a style="color: #6c757d;">Disabled</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Fill and Justify Pills Nav</h3>
+                </div>
+                <ul class="nav" style="display: flex; text-align: center; flex-wrap: wrap;">
+                  <li style="background-color: #007bff; border-radius: 5px; flex: 1 1 auto" ><a href="" style="color: white;">Active</a></li>
+                  <li style="flex: 0 0 auto"><a href="" style="color: #007bff">Longer nav link</a></li>
+                  <li style="flex: 0 0 auto"><a href="">Link</a></li>
+                  <li style="flex: 0 0 auto"><a style="color: #6c757d;">Disabled</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Progress</h3>
+                </div>
+                <div class="progress">
+                  <div class="fill">
+                    <p style="color: white; text-align: center;">75%</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Buttons</h3>
+                </div>
+                <div class=" buttons"style="display: flex;">
+                  <div style="width:100%;">
+                    <div class="primary-button">
+                      <p class="mar-bot-50">
+                        <span>Primary</span>
+                      </p>        
+                      <p class="mar-bot-50">
+                        <span>Primary</span>
+                      </p>
+                      <p class="mar-bot-50">
+                        <span>Primary</span>
+                      </p>
+                    </div>
+                    <div class="secondary-button">
+                      <p class="mar-bot-50">
+                        <span>Secondary</span>
+                      </p>
+                      <p class="mar-bot-50">
+                        <span>Secondary</span>
+                      </p>
+                      <p class="mar-bot-50">
+                        <span>Secondary</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div style="width:100%;">
+                    <div class="primary-outline-button">
+                      <p class="mar-bot-50">
+                        <span>Primary Outline</span>
+                      </p>
+                      <p class="mar-bot-50">
+                        <span>Primary Outline</span>
+                      </p>
+                      <p class="mar-bot-50">
+                        <span>Primary Outline</span>
+                      </p>
+                    </div>
+                    <div class="secondary-outline-button">
+                      <p class="mar-bot-50">
+                        <span>Secondary Outline</span>
+                      </p>
+                      <p class="mar-bot-50">
+                        <span>Secondary Outline</span>
+                      </p>
+                      <p class="mar-bot-50">
+                        <span>Secondary Outline</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Button Group</h3>
+                </div>
+                <div class="button-group-container">
+                  <div>
+                    <div class="button-group" style="padding: 10px;">
+                      <a href="">1</a>
+                    </div>
+                    <div class="button-group" style="padding:10px;">
+                      <a href="">2</a>
+                    </div>
+                    <div class="button-group" style="padding:10px;">
+                      <a href="">Dropdown <i class="fas fa-arrow-down"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div  class="button-group-container">
+                  <div>
+                    <div class="button-group" style="padding:12px;">
+                      <a href="">1</a>
+                    </div>
+                    <div class="button-group" style="padding:12px;">
+                      <a href="">2</a>
+                    </div>
+                    <div class="button-group" style="padding:12px;">
+                      <a href="">Dropdown <i class="fas fa-arrow-down"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div  class="button-group-container">
+                  <div>
+                    <div class="button-group" style="padding:14px;">
+                      <a href="">1</a>
+                    </div>
+                    <div class="button-group" style="padding:14px;">
+                      <a href="">2</a>
+                    </div>
+                    <div class="button-group" style="padding:14px;">
+                      <a href="">Dropdown <i class="fas fa-arrow-down"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Collapse</h3>
+                </div>
+                <label class="cursor" for="colla-toggle">
+                    <div class="colla-button" style="display: flex; margin-bottom: 25px; ">
+                    <p style="margin-right: 15px;">
+                      <span>Link with href</span>
+                    </p>
+                    <p>
+                      <span>Button with data-target</span>
+                    </p>
+                  </div>
+                </label>
+                <input class="none" id="colla-toggle" type="checkbox"/>       
+                <div class="none collapse" style="border: 1px solid #e2e2e2;">
+                  <p style="padding: 20px;">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>  
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3 style="margin: 0;">Tooltips</h3>
+                </div>
+                
+                <div class="tooltip mar-bot-50" >Tooltip on top
+                  <span class="tooltiptext top">Some tooltip text</span>
+                </div>
+                <br>
+                <div class="tooltip">
+                  <p class="mar-bot-50 secondary-button">
+                    <span style="padding: 10px 15px 10px 15px">Html Tooltip on right</span>
+                  </p>
+                  <div class="tooltiptext right">
+                    <div class="tooltip-thumbnail">
+                      <p style=>100x80</p>
+                    </div>
+                    <h3 style="font-size: 1.5rem; margin: 0;">Tooltip</h3>
+                    <div style="display: flex; justify-content: center;">
+                      <p style="text-decoration: underline; margin: 0; margin-right: 5px;">with</p>
+                      <h4 style="margin: 0;">HTML</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="right" style="width:50%;">
+            <div style="margin-left: 10px;">
+              <div>
+                <div class="title">
+                  <h3>Breadcrumb</h3>
+                </div>
+                <div class="breadcrumb">
+                  <p style="background-color: #e2e3e5; color: #383d41; padding: 15px; border-radius: 5px;"><span style="color: #007bff;">Home</span> / <span style="color: #007bff;">Library</span> / Breadcrumb</p>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Carousel</h3>
+                </div>
+                <section class="carousel">
+                  <ol class="carousel__viewport">
+                    <li id="carousel__slide1"
+                        class="carousel__slide">
+                      <div class="carousel__snapper"></div>
+                      <a href="#carousel__slide3"><i class="fas fa-angle-left carousel__prev"></i></a>
+                      <div style="text-align: center; color: white;">
+                        <h2>Carousel Slider Title</h2>
+                        <p style="padding: 0px 30px 0px 30px;">Description text to further describe the content of the slide image</p>
+                        <div>  
+                          <span class="button" style="font-size: 1.3rem; display: inline-block;">Call to Action</span>
+                        </div>
+                      </div>
+                      <a href="#carousel__slide2"><i class="fas fa-angle-right carousel__next"></i></a>
+                    </li>
+
+                    <li id="carousel__slide2" class="carousel__slide">
+                      <div class="carousel__snapper">
+                      </div>
+                      <a href="#carousel__slide1"><i class="fas fa-angle-left carousel__prev"></i></a>
+                      <div style="text-align: center; color: white;">
+                        <h2>Carousel Slider Title</h2>
+                        <p style="padding: 0px 30px 0px 30px;">Description text to further describe the content of the slide image</p>
+                        <div>  
+                          <span class="button" style="font-size: 1.3rem; display: inline-block;">Call to Action</span>
+                        </div>
+                      </div>
+                      <a href="#carousel__slide3"><i class="fas fa-angle-right carousel__next"></i></a>
+                    </li>
+
+                    <li id="carousel__slide3" class="carousel__slide">
+                      <div class="carousel__snapper"></div>
+                      <a href="#carousel__slide2"><i class="fas fa-angle-left carousel__prev "></i></a>
+                      <div style="text-align: center; color: white;">
+                        <h2>Carousel Slider Title</h2>
+                        <p style="padding: 0px 30px 0px 30px;">Description text to further describe the content of the slide image</p>
+                        <div>  
+                          <span class="button" style="font-size: 1.3rem; display: inline-block;">Call to Action</span>
+                        </div>
+                      </div>
+                      <a href="#carousel__slide1"><i class="fas fa-angle-right carousel__next"></i></a>
+                    </li>
+                  </ol>
+                  <div class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide1" class="carousel__navigation-button"></a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide2" class="carousel__navigation-button"></a>
+                      </li>
+                      <li class="carousel__navigation-item">
+                        <a href="#carousel__slide3" class="carousel__navigation-button"></a>
+                      </li>
+                    </ol>
+                  </div>
+                </section>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Dropdowns</h3>
+                </div>
+                <div class="mar-bot-50">
+                  <div class="button-group" style="display: inline-flex; justify-content: flex-start; padding:12px;border: 1px solid #6c757d; border-radius: 5px;">
+                    <a href="" style=" font-size: 1.3rem;">Large button <i class="fas fa-arrow-down"></i></a>
+                  </div>
+                  <div style="display: inline-flex; justify-content: flex-start; border: 1px solid #6c757d; border-radius: 5px;">
+                    <div class="button-group" style="padding:12px;">
+                      <a href="" style="font-size: 1.3rem;">Large split button</a>
+                    </div>
+                    <div class="button-group" style="padding:12px;">
+                      <a href="" style="font-size: 1.3rem;"><i class="fas fa-arrow-down"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="mar-bot-50">
+                  <div class="button-group" style="display: inline-flex; justify-content: flex-start; padding:5px; border: 1px solid #6c757d; border-radius: 5px;">
+                    <a href="">small button <i class="fas fa-arrow-down"></i></a>
+                  </div>
+                  <div style="display: inline-flex; justify-content: flex-start; border: 1px solid #6c757d; border-radius: 5px;">
+                    <div class="button-group" style="padding:5px;">
+                      <a href="">small split button</a>
+                    </div>
+                    <div class="button-group" style="padding:5px;">
+                      <a href=""><i class="fas fa-arrow-down"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Modal</h3>
+                </div>
+                
+                <div>
+                  <a href="#open-modal">
+                    <span class="button" style="padding: 8px;">Launch demo modal</span>
+                  </a>
+                </div>
+                <div style="border-radius: 5px;">
+                  <div id="open-modal" class="modal-window">
+                    <div style="margin-top: 30px; border-bottom: 1px solid #e2e2ee;">
+                      <h3 style="margin: 0">Modal title</h3>
+                      <a href="#modal-close" title="Close" class="modal-close">&times;</a>
+                    </div>
+                    <div style="border-bottom: 1px solid #e2e2ee;">
+                      <h1 style="margin: 0; font-size: 2rem;">Modal body heading</h1>
+                      <p style="margin: 0">Modal body text description</p>
+                    </div>
+                    <div class="secondary-button" style="display: flex; justify-content: flex-end;">
+                      <a href="#modal-close" style="margin-right: 10px;">
+                        <span style="background-color: #818182; color: white; border-radius: 5px; padding: 8px;">Close</span>
+                      </a>
+                      <a>
+                        <span class="button" style="padding: 8px;">Save changes</span>   
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Navbar</h3>
+                </div>
+                <div  style="background-color: #007bff;">
+                  <div class="header">
+                    <div style="padding-left: 16px;">
+                      <label class="cursor" for="toggle-nav" style="color: white; display: inline-block; border: 1px solid white; padding: 10px; opacity: 40%; border-radius: 5px;">
+                        <i class="fas fa-bars" style="font-size: 25px; margin-left: 10px; margin-right: 10px;"></i>
+                      </label>
+                      <input class="none" id="toggle-nav" type="checkbox"/>       
+                      <div class="none Navbar" style="color: white;">
+                        <p>Home</p>
+                        <p style="opacity: 50%;">Features</p>
+                        <p style="opacity: 50%;">Pricing</p>
+                        <p style="opacity: 50%;">Dropdown link <i class="fas fa-arrow-down"></i></p>
+                      </div>
+                    </div>
+                    <div style="padding-right: 16px;">
+                      <p style="color: white;"><span>Navbar</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Jumbotron</h3>
+                </div>
+                <div style="background-color: #e2e2e2; padding:30px; padding-bottom: 60px;">
+                  <div>
+                    <h1 style="font-weight: 100; font-size: 5vw; margin-bottom: 15px; margin-top: 50px;">Jumbotron</h1>
+                    <p style="font-size: 1.5rem; font-weight: 100;">A component for calling extra attention to featured content or information.</p>
+                    <hr>
+                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                  </div>
+                  <div>  
+                    <span class="button" style="font-size: 1.3rem; display: inline-block;">Learn More</span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>List group</h3>
+                </div>
+                <div class="list-group">
+                  <div style=" margin-bottom: 0px;">
+                    <span>List group item #1 <span style="color: white; background-color: #818182;">14</span></span>
+                  </div>
+                  <div style="margin-bottom: 0px;">
+                    <span>List group item #2 <span style="color: white; background-color: #28a745;">2</span></span>
+                  </div>
+                  <div>
+                    <span>List group item #3 <span style="color: black; background-color: #ffc107;">1</span></span>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Base Nav</h3>
+                </div>  
+                <ul class="nav">
+                  <li><a href="">Active</a></li>
+                  <li><a href="">Link</a></li>
+                  <li><a href="">Link</a></li>
+                  <li><a style="color: #818182;">Disabled</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Vertical Nav</h3>
+                </div>
+                <ul class="nav">
+                  <li><a href="">Active</a></li>
+                  <li><a href="">Link</a></li>
+                  <li><a href="">Link</a></li>
+                  <li><a style="color: #818182;">Disabled</a></li>
+                </ul>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Tabs Nav</h3>
+                </div>
+                <div class="tabs-nav">
+                  <ul>
+                    <li style="color: #818182; border: 1px solid #dee2e6; border-bottom: 0px;" >Previous</li>
+                    <li>
+                      <a href="" style="padding:5px; color: #007bff;">Dropdown <i class="fas fa-arrow-down"></i></a>
+                    </li>
+                    <li>
+                      <a href="" style="padding:5px; color: #007bff;">Link</a>
+                    </li>
+                    <li>
+                      <a style="padding:5px; color: #818182;">Disabled</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Pagination</h3>
+                </div>
+                <div class="pagination">
+                  <ul>
+                    <li style="color: #818182; border: 1px solid #818182" >Previous</li>
+                    <li>
+                      <a href="" style="padding:5px; color: #007bff;">1</a>
+                    </li>
+                    <li style="background-color: #007bff;">
+                      <a href="" style="padding:5px; color: white;">2</a>
+                    </li>
+                    <li style="color: #007bff;">
+                      <a href="" style="padding:5px; color: #007bff;">3</a>
+                    </li>
+                    <li style="color: #007bff;">
+                      <a href="" style="padding:5px; color: #007bff;">Next</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pagination">
+                  <ul style="display: flex; justify-content: flex-start; padding-left: 0; font-size: 1.5rem;">
+                    <li style="color: #818182; border: 1px solid #818182" >Previous</li>
+                    <li style="color: #007bff;">
+                      <a href="" style="padding:10px; color: #007bff;">1</a>
+                    </li>
+                    <li>
+                      <a href="" style="padding:10px; color: #007bff;;">2</a>
+                    </li>
+                    <li style="color: #007bff;">
+                    <a href="" style="margin:10px; color: #007bff;">3</a>
+                  </li>
+                  <li style="color: #007bff;">
+                    <a href="" style="padding:10px; color: #007bff;">Next</a>
+                  </li>
+                </ul>
+              </div>
+
+
+              <div>
+                <div class="title">
+                  <h3>Forms</h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap;">
+                  <div style="width:50%;">
+                    <form action="" style=" margin-right: 20px;">
+                      <div style="margin-bottom: 30px;">
+                        <label for="email">Email address</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter email" style="padding:10px;width: 90%; border: 1px solid #e2e2e2;">
+                      </div>
+                      <div style="margin-bottom: 30px;">
+                        <label for="number">Example select</label><br>
+                        <select id="number" name="number" style="padding:10px; width: 95%; border: 1px solid #e2e2e2;">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>
+                      <div>
+                        <h3>Radio buttons</h3>
+                        <input type="radio" id="One" name="fav_language" value="Option one">
+                        <label for="One">Option one</label><br>
+                        <input type="radio" id="two" name="fav_language" value="Option two" disabled>
+                        <label for="two">Option two - disabled</label><br>
+                      </div>
+                    </form>
+                  </div>
+                  <div style="width:50%;">
+                    <form action=""  style=" margin-left: 20px;">
+                      <div class="password"style="margin-bottom: 30px;">
+                        <label for="password">Password</label><br>
+                        <input type="passowrd" id="password" name="password" placeholder="Password" style="padding:10px;width: 90%;border: 1px solid #e2e2e2;"><br>
+                        <div style="width: 100%;">
+                          <a href=""><span style="color: #007bff;">Forgot Password?</span></a>
+                          <a href=""><span style="color: #007bff;">sign up</span></a>
+                        </div>
+                      </div>
+                      <div style="margin-bottom: 30px;height: 90px;">
+                        <label for="Multiple">Multiple select</label><br>
+                        <select id="Multiple" name="Multiple" style="padding:10px; padding-right: 0px;width: 95%; border: 1px solid #e2e2e2;" size="4">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                        </select>
+                      </div>
+                      <div>
+                        <input type="checkbox" id="on" name="vehicle1" value="on">
+                        <label for="on">Checkbox</label><br>
+                        <input type="checkbox" id="off" name="vehicle2" value="off" disabled>
+                        <label for="off">Checkbox - disabled</label><br>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <form>         
+                  <div style="margin-bottom: 30px; width: 95%;">
+                    <labal for="message">Textarea</label><br>
+                      <textarea rows="10" id="message"
+                      placeholder=""
+                      style="width: 100%; padding:15px; padding-right: 0px; resize: vertical; border: 1px solid #e2e2e2;"></textarea><br>
+                    </div>
+                    <div>
+                      <label for="myfile"><span >File input</span></label><br>
+                      <input type="file" id="myfile" name="myfile" style="margin-top: 10px; font-size: 1.1rem;"><br><br>
+                    </div>
+                    <div>
+                      <input class="submit"type="submit" id="name" value="SUBMIT"
+                      style="padding: 10px; color: white; background-color: #007bff; border-radius: 5px; border: none;"><br>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div>
+                <div class="title">
+                  <h3>Scrollspy</h3>
+                </div>
+                <div style="border: 1px solid #e2e2e2; padding: 40px; height: 300px;">
+                  <div style=" height: 20%; padding: 0 20px 20px 20px; display: flex; justify-content: space-between;">
+                    <p style="font-size: 1.4rem; flex: 0 0 auto; margin: 19px 0 19px 0;">Scrollspy</p>
+                    <ul class="scrollspy-button">
+                      <li><a href="#Description" style="color: #007bff; ">Description</a></li>
+                      <li><a href="#Use-cases" style="color: #007bff; ">Use Cases</a></li>
+                    </ul>
+                  </div>
+                  <div style="overflow: scroll; overflow-x:unset; height: 80%;">
+                    <a id="Description"><h3 style="font-size: 1.5rem;">Description</h3></a>
+                    <p style="font-size: 1.2rem;">The ScrollSpy plugin auto updates nav targets as you scroll the area below the navbar. Also works in dropdowns as well.</p>
+                    <a id="Use-cases"><h3 style="font-size: 1.5rem;">Use Cases</h3></a>
+                    <ul style="font-size: 1.2rem;">
+                      <li>For long pages of documentation</li>
+                      <li>One page website with sticky top navbar</li>
+                      <li>A grid of images for a portfolio that identifies categories as you scroll down the page. For example: print, web, photography, etc.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <iframe src="kitchen_sink_utilities.html" width="100%" height="1188px" style=" border:0px"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer style="padding: 32px; padding-top: 0; padding-bottom: 15px;">
+    <div>
+      <p>
+        Created by <a href="https://bootstrapcreative.com/" style="color: #007bff; text-decoration: none;">BootstrapCreative</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
